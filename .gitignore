@@ -1,19 +1,22 @@
-# -*- mode: gitignore; -*-
-*~
-\#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-*.elc
-auto-save-list
-tramp
-.\#*
+# Bundler cache
+.bundle
+vendor
+Gemfile.lock
 
-_site/
-.sass-cache/
-*.swp
-pkg/
-test/
-_deploy/*
-Rakefile
-.jekyll-metadata
-/.idea/
+# Jekyll cache
+.jekyll-cache
+_site
+
+# RubyGems
+*.gem
+
+# NPM dependencies
+node_modules
+package-lock.json
+
+# IDE configurations
+.idea
+.vscode
+
+# Misc
+assets/js/dist

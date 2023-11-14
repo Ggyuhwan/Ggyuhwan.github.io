@@ -1,98 +1,94 @@
-# { Personal } Jekyll Theme
-![Build Status](https://travis-ci.org/le4ker/personal-jekyll-theme.svg?branch=master)
-![license](https://img.shields.io/badge/license-MIT-blue.svg?link=https://github.com/dono-app/ios/blob/master/LICENSE)
-[![Join the chat at https://gitter.im/PanosSakkos/personal-jekyll-theme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/panossakkos/personal-jekyll-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+<div align="center">
 
-{ Personal } is a free responsive Jekyll theme, about you :wink:
+  # Chirpy Jekyll Theme
 
-You can watch it in action [here](https://le4ker.github.io/personal-jekyll-theme/)!
+  A minimal, responsive, and feature-rich Jekyll theme for technical writing.
 
-<img src="https://github.com/le4ker/personal-jekyll-theme/raw/master/.github/personal-mobile.mov.gif" height="480">
+  [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)][gem]&nbsp;
+  [![CI](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml/badge.svg?branch=master&event=push)][ci]&nbsp;
+  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4e556876a3c54d5e8f2d2857c4f43894)][codacy]&nbsp;
+  [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)][license]&nbsp;
+  [![996.icu](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg)](https://996.icu)
 
-<img src="https://github.com/le4ker/personal-jekyll-theme/raw/master/.github/personal-desktop.mov.gif" height="600" width="960">
+  [**Live Demo →**][demo]
 
-## What value does { Personal } add
+  [![Devices Mockup](https://chirpy-img.netlify.app/commons/devices-mockup.png)][demo]
 
-* Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme) (mashup of [Grayscale by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-grayscale) and [Agency Jekyll Theme](https://github.com/y7kim/agency-jekyll-theme))
-  * Modern and minimal design
-    * Responsive templates for home page, blog archive and posts. Looks great on mobile, tablet, and desktop devices
-    * Sweet animations
-    * Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers
-  * Timeline
-    * Tell your story so far with a sleek timeline of dates, pictures and descriptions
-  * White on black text, making the reading experience tireless
-  * Google analytics  
-* Customization and full control of your website and blog through the site config
-* Customization of the website's coloring
-* Blogging functionality
-  * Preview of the latest post in the home page
-  * Archive page
-  * Syntax highlighting
-  * Emojis
-  * Gesture navigation in archive and post pages by swiping
-  * Hashtags
-  * Categories
-  * Disqus comments
-  * Bootstrap share buttons
-  * RSS feed
-* Author blurb under the posts
-* 404 page
-* iOS and Android Web App mode
-* Enforcing of https protocol
-* Protection from email harvesting
-* Sitemap
-* Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
+</div>
+
+## Features
+
+<details>
+  <summary>Click to expand/close details</summary>
+  &nbsp;
+
+- Dark / Light Theme Mode
+- Localized UI language
+- Pinned Posts on Home Page
+- Hierarchical Categories
+- Trending Tags
+- Table of Contents
+- Last Modified Date
+- Syntax Highlighting
+- Mathematical Expressions
+- Mermaid Diagrams & Flowcharts
+- Dark / Light Mode Images
+- Embed Videos
+- Disqus / Giscus / Utterances Comments
+- Built-in Search
+- Atom Feeds
+- PWA
+- Google Analytics
+- SEO & Performance Optimization
+
+</details>
 
 ## Documentation
 
-The theme contains documentation in the form of [blog posts](https://le4ker.github.io/personal-jekyll-theme/blog/index.html).
+To learn how to use, develop, and upgrade the project, please refer to the [Wiki][wiki].
 
-## How to run locally
+## Contributing
 
-First, you need to install jekyll and the dependencies of { Personal } by running:
+Contributions (_pull requests_, _issues_, and _discussions_) are what make the open-source community such an amazing place
+to learn, inspire, and create. Any contributions you make are greatly appreciated.
+For details, see the "[Contributing Guidelines][contribute-guide]".
 
-```shell
-./scripts/install
-```
+## Credits
 
-Then, you can build and serve your website by simply running:
+This project was built primarily with the [Jekyll][jekyllrb] ecosystem,
+[Bootstrap][bootstrap], [Font Awesome][icons], and some other [wonderful tools][lib].
+The avatar and favicon design from [Clipart Max][image].
 
-```shell
-./scripts/serve-production
-```
+Many thanks to the [contributors][contributors] who participated in the development
+and to the folks who reported bugs or shared ideas.
 
-To serve across lan (requires su to forward the port 4000 over lan):
+Last but not least, thanks to [JetBrains][jetbrains] for providing the _Open Source License_.
 
-```shell
-./scripts/serve-lan-production
-```
+## Sponsoring
 
-### Docker
+If you like this project or have built something through it, please consider sponsoring it, and your support would be greatly appreciated.
 
-Run using Docker:
+[![Ko-fi](https://img.shields.io/badge/Support_Me_on_Ko--fi-ff5e5b?logo=ko-fi&logoColor=white)][ko-fi]&nbsp;
+[![Wechat Pay](https://img.shields.io/badge/Support_Me_on_WeChat-brightgreen?logo=wechat&logoColor=white)][donation]&nbsp;
+[![Alipay](https://img.shields.io/badge/Support_Me_on_Alipay-blue?logo=alipay&logoColor=white)][donation]
 
-```
-docker run --rm -it -p 4000:4000 -v "$PWD:/srv/jekyll" jekyll/jekyll jekyll serve --watch --host "0.0.0.0" --config _config.yml,_config.dev.yml
-```
+## License
 
-Run using Docker with Docker Compose:
-```
-docker-compose up
-```
+This project is published under [MIT License][license].
 
-## OSS used in { Personal }
-
-One of the reasons { Personal } is real is the following OSS projects:
-
-  1. [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
-  2. [hammer.js](https://hammerjs.github.io/)
-  3. [highlightjs](https://highlightjs.org/)
-  4. [RRSSB](https://github.com/kni-labs/rrssb)
-  5. [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
-  6. [typed.js](https://github.com/mattboldt/typed.js/)
-
-<div style="font-size:16px;margin:0 auto;width:300px">
-    <a href="https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi">
-        <img src="https://blockchain.info/Resources/buttons/donate_64.png"/>
-    </a>
-</div>
+[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
+[ci]: https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml?query=event%3Apush+branch%3Amaster
+[codacy]: https://app.codacy.com/gh/cotes2020/jekyll-theme-chirpy/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade
+[license]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
+[jekyllrb]: https://jekyllrb.com/
+[bootstrap]: https://getbootstrap.com/
+[icons]: https://fontawesome.com/
+[image]: https://www.clipartmax.com/middle/m2i8b1m2K9Z5m2K9_ant-clipart-childrens-ant-cute/
+[demo]: https://cotes2020.github.io/chirpy-demo/
+[wiki]: https://github.com/cotes2020/jekyll-theme-chirpy/wiki
+[contribute-guide]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/docs/CONTRIBUTING.md
+[contributors]: https://github.com/cotes2020/jekyll-theme-chirpy/graphs/contributors
+[lib]: https://github.com/cotes2020/chirpy-static-assets
+[jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
+[ko-fi]: https://ko-fi.com/coteschung/
+[donation]: https://sponsor.cotes.page/

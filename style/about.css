@@ -74,7 +74,7 @@
 
 .job__name,
 .job__period {
-  color: var(--color-light-grey);
+  color: #000000;
 }
 
 .job__name {

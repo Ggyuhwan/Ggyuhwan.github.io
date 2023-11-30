@@ -4,8 +4,13 @@
   justify-content: space-between;
   margin: 80px 0;
 }
+.major {
+  width: 250px; /* 원하는 너비 설정 */
+  text-align: center;
+  margin: 0 10px; /* 각 항목 사이의 간격 설정 */
+}
 
-.major__icon {
+/* .major__icon {
   width: 170px;
   height: 170px;
   line-height: 170px;
@@ -15,16 +20,33 @@
   color: var(--color-blue);
   border-radius: 50%;
   margin-bottom: 16px;
+} */
+.major__icon {
+  font-size: 70px;
+  line-height: 170px;
+  border: 1px solid var(--color-blue);
+  color: var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
 }
 
+/* .major__icon i {
+  transition: all var(--animation-duration) ease;
+} */
 .major__icon i {
   transition: all var(--animation-duration) ease;
 }
+
+/* .major__icon:hover i {
+  color: var(--color-pink);
+  transform: rotate(-30deg) scale(1.1);
+} */
 
 .major__icon:hover i {
   color: var(--color-pink);
   transform: rotate(-30deg) scale(1.1);
 }
+
 
 .major__title,
 .major__description {

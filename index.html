@@ -32,7 +32,7 @@
       <ul class="navbar__menu">
         <li class="navbar__menu__item active" data-link="#home">Home</li>
         <li class="navbar__menu__item" data-link="#about">About</li>
-        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <!-- <li class="navbar__menu__item" data-link="#skills">Skills</li> -->
         <li class="navbar__menu__item" data-link="#work">My work</li>
         <li class="navbar__menu__item" data-link="#testimonials">
           Testimonials
@@ -74,21 +74,23 @@
       <div class="about__majors">
         <div class="major">
           <div class="major__icon">
-            <i class="fab fa-html5"></i>
+            <i class="fa-solid fa-keyboard"></i>
           </div>
-          <h2 class="major__title">Front-end</h2>
+          <h2 class="major__title">Programming Languages</h2>
           <div class="major__description">
-            HTML, CSS, JavaScript,
-            <br />TypeScript, Web APIs
+            JAVA, JSP, Python
+            <br />
+            HTML, CSS, JS, MarkDown
+            
           </div>
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fas fa-cloud"></i>
+            <i class="fa-solid fa-database"></i>
           </div>
           <h2 class="major__title">DB</h2>
           <div class="major__description">
-            Oracle
+            Oracle, SQLite
             <br />
           </div>
         </div>
@@ -96,10 +98,22 @@
           <div class="major__icon">
             <i class="fas fa-server"></i>
           </div>
-          <h2 class="major__title">Back-end</h2>
+          <h2 class="major__title">Framework/Library</h2>
           <div class="major__description">
-            Java, Spring, JavaScript 
-            <br />
+            Spring, JQuery, FLASK,  
+            <br/>
+            Pandas, numpy, tensorflow
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa-solid fa-desktop"></i>
+          </div>
+          <h2 class="major__title">IDEs & Code Editors</h2>
+          <div class="major__description">
+            Eclipse IDE, Pycharm, IntelliJ IDEA  
+            <br/>
+            VSCode, STS (Spring Tools 4 for Visual Studio Code)
           </div>
         </div>
       </div>
@@ -121,7 +135,7 @@
       </div>
     </section>
 
-    <!-- Skills  -->
+    <!-- Skills 
     <section id="skills" class="section">
       <div class="section__container">
         <h1>Skills</h1>
@@ -203,7 +217,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
  
     <!-- Work -->
     <section id="work" class="section">
@@ -216,10 +230,10 @@
         </h3>
         <div class="work__categories">
           <button class="category__btn selected" data-filter="*">
-            All<span class="category__count">5</span>
+            All<span class="category__count">2</span>
           </button>
           <button class="category__btn" data-filter="small">
-            Team<span class="category__count">3</span>
+            Team<span class="category__count">1</span>
           </button>
           <button class="category__btn" data-filter="middle">
             Toy<span class="category__count">1</span>
@@ -232,7 +246,7 @@
             href="https://github.com/Ggyuhwan/DogWater"
             class="project"
             target="blank"
-            data-type="small"
+            data-type="middle"
             ><img
               class="project__img"
               src="imgs/projects/dog.png"

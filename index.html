@@ -14,7 +14,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script src="main.js" defer></script>
-
+  <style>
+    .info {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .info-proj {
+      width: 48%; /* 조절 가능한 너비 설정 */
+      margin-bottom: 20px;
+      text-align: left; /* 텍스트 왼쪽 정렬 설정 */
+    }
+  </style>
 
 </head>
 
@@ -141,7 +153,9 @@
           <p class="job__name">대전시설관리공단</p>
           <p class="job__period">2018년 7월 - 2023년 5월</br>
             용운국제수영장</br>
-            수영장 운영관리, 수영강습, 계약직 관리</br>
+            · 수영장 운영관리</br>
+            · 수영강습</br>
+            · 계약직 관리</br>
           </br> 
           </p>
         </div>
@@ -258,16 +272,31 @@
       </h3>
       <div class="work__categories">
         <button class="category__btn selected" data-filter="*">
-          All<span class="category__count">2</span>
+          All<span class="category__count">3</span>
         </button>
         <button class="category__btn" data-filter="small">
-          Team<span class="category__count">0</span>
+          Team<span class="category__count">1</span>
         </button>
         <button class="category__btn" data-filter="middle">
           Toy<span class="category__count">2</span>
         </button>
-
+        <div class="work__projects">
+          <a href=https://github.com/Ggyuhwan/Flask/tree/main class="project" target="blank" data-type="small"><img
+              class="project__img" src="imgs/projects/eco.png" alt="Ecoala" />
+            <div class="project__description">
+              <h3>Ecoala</h3>
+              <span>전력 데이터 서비스</span>
+            </div>
+          </a>
       </div>
+      <div class="work__projects">
+        <a href=https://github.com/Ggyuhwan/Flask/tree/main class="project" target="blank" data-type="middle"><img
+            class="project__img" src="imgs/projects/flask.png" alt="이미지 분류" />
+          <div class="project__description">
+            <h3>이미지 분류</h3>
+            <span>머신러닝 악기 이미지 분류</span>
+          </div>
+        </a>
 
       <div class="work__projects">
         <a href="https://github.com/Ggyuhwan/DogWater" class="project" target="blank" data-type="middle"><img
@@ -277,14 +306,7 @@
             <span>수영운동정보 및 정보공유</span>
           </div>
         </a>
-        <div class="work__projects">
-          <a href=https://github.com/Ggyuhwan/Flask/tree/main class="project" target="blank" data-type="middle"><img
-              class="project__img" src="imgs/projects/flask.png" alt="이미지 분류" />
-            <div class="project__description">
-              <h3>이미지 분류</h3>
-              <span>머신러닝 악기 이미지 분류</span>
-            </div>
-          </a>
+       
 
           <!-- <a
             href="https://github.com/jin0kim326/frontend-youtube-clone"
@@ -347,10 +369,54 @@
             </div>
           </a> -->
         </div>
-        
       </div>
   </section>
-
+    <!-- info -->
+    <section id="info" class="section">
+      <div class="section__container">
+        <h1>프로젝트 소개</h1>
+        <div class="info">
+          <div class="info-proj">
+            <h2>Ecoala</h2><br>
+            <p>
+              <strong>프로젝트 기간 :</strong> 2023.10.30 ~ 2023.12.24<br><br>
+              <strong>프로젝트 설명 :</strong> 2050 탄소중립 시나리오 정책에 맞춰 탄소중립을 위한 전력데이터 서비스 입니다. <br><br>
+              <strong>프로젝트 방식 :</strong> Spring MVC + AI(전력 사용량 예측 모델)
+              <br><br>
+              <strong>프로젝트 도구 :</strong> Spring-tool-suite, Pycharm, Jupyter, OracleDB ,SVN, JENKINS,JIRA, Github<br><br>
+              <strong>사용 기술 :</strong>  Spring, MVC모델, JQuery, Prophet 예측 모델<br><br>
+              <strong>사용 언어 :</strong> JAVA, JSP, HTML/CSS/JS, SQL, Python<br><br>
+              <strong></strong>
+            </p>
+          </div>
+          <div class="info-proj">
+            <h2>악기 이미지 분류</h2><br>
+            <p>
+              <strong>프로젝트 기간 :</strong> 23.10.25 ~ 23.10.30<br><br>
+              <strong>프로젝트 설명 :</strong> (이미지 분류 모델)를 활용한 프로젝트. <br><br>
+              <strong>프로젝트 방식 :</strong> Deep Learning<br><br>
+              <strong>프로젝트 도구 :</strong> Pycharm<br><br>
+              <strong>사용 기술 :</strong> CNN, FLASK<br><br>
+              <strong>사용 언어 :</strong> Python<br><br>
+              <strong></strong>
+            </p>
+          </div>
+          <div class="info-proj">
+            <h2>WaterDog</h2><br>
+            <p>
+              <strong>프로젝트 기간 :</strong> 23.9.13 ~ 23.9.27<br><br>
+              <strong>프로젝트 설명 :</strong> Spring Framework를 사용하여 진행한 프로젝트 입니다.<br><br>
+              <strong>프로젝트 방식 :</strong> Spring MVC<br><br>
+              <strong>프로젝트 도구 :</strong> Eclipse, Spring-tool-suite, OracleDB, Github<br><br>
+              <strong>사용 기술 :</strong> Spring, MVC모델,JQuery, AJAX, API(카카오), Bootstrap<br><br>
+              <strong>사용 언어 :</strong> JAVA, JSP, HTML/CSS/JS, SQL<br><br>
+              <strong></strong>
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
   <!-- testimonials -->
   <section id="testimonials" class="section">
     <div class="section__container">
